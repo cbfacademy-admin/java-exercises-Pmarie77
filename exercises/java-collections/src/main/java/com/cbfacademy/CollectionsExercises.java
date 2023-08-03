@@ -2,18 +2,37 @@ package com.cbfacademy;
 
 import java.util.*;
 
+import javax.management.RuntimeErrorException;
+
 public class CollectionsExercises {
 
-    public LinkedList<Integer> useLinkedList() {
+    public LinkedList<Integers> useLinkedList() {
         // TODO: create an empty linked list
+        LinkedList<Integer> integers = new LinkedList<>();
         //  - add 4 as the first element of the list
+        integers.add(4);
         //  - then add 5, 6, 8, 2, 9 to the the list
+        integers.add(5);
+        integers.add(6);
+        integers.add(8);
+        integers.add(2);
+        integers.add(9);
         //  - add another 2 as the last element of the list
+        integers.add(2);
         //  - add 4 as the 3rd element of the list
+        integers.add(2, 4);
+
         //  - invoke the method element() on the list and print the result on the screen
+        System.out.println(integers.element());
         //  - return the list
+        return integers;
+
         throw new RuntimeException("Not implemented");
     }
+
+
+
+    
 
     public Stack<Integer> useStack() {
         // TODO: create an empty stack
@@ -28,13 +47,33 @@ public class CollectionsExercises {
 
     public ArrayDeque<Integer> useArrayDeque() {
         // TODO: create an empty arrayDeque
-        //  - add 5, 6, 8, 9 to the the stack
-        //  - print the first element of the queue on the screen
-        //  - print the last element of the queue on the screen
-        //  - invoke the method poll() on the queue and print the result on the screen
-        //  - invoke the element() method on the queue and print the result on the screen
-        //  - return the queue
-        throw new RuntimeException("Not implemented");
+        ArrayDeque<Integer> arrayDeque = new ArrayDeque<>();
+
+        // - add 5, 6, 8, 9 to the the stack
+        arrayDeque.add(5);
+        arrayDeque.add(6);
+        arrayDeque.add(8);
+        arrayDeque.add(9);
+
+        // - print the first element of the queue on the screen
+        System.out.print(arrayDeque.peek());
+
+        // print the last element of the queue on the screen
+        System.out.print(arrayDeque.getLast());
+
+        // - invoke the method poll() on the queue and print the result on the screen
+        System.out.print(arrayDeque.poll());
+
+        // - invoke the element() method on the queue and print the result on the screen
+        System.out.print(arrayDeque.element());
+
+        // - return the queue
+        return arrayDeque;
+
+        throw new Runtimexception(message:"Not implemented");
+
+    
+    
     }
 
     public HashMap<Integer, String> useHashMap() {
